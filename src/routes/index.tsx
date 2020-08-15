@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 //Paginas
 import Dashboard from '../pages/Dashboard';
 import Repository from '../pages/Repository';
@@ -8,7 +7,7 @@ import Repository from '../pages/Repository';
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
-    <Route path="/repository" component={Repository} />
+    <Route path="/repository/:repos+" component={Repository} />
   </Switch>
 );
 
